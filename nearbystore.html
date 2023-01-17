@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nearbystore.css">
+    <link rel="icon" type="image/x-icon" href="project images/burgerking.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+               
+    <title>Burger king | India</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+    
+        <div class="blogo">
+          <a>
+              <img class="logo" src="project images/burgerlogoi.png" alt="burger image"   width="79" height="79">
+          </a>
+        </div>   
+        <div class="order">
+          Dine in/Takeaway
+          <label class="switch">
+              <input type="checkbox">
+              <span class="slider "></span>
+            </label> delivery
+        </div>   
+        <div class="menu">
+         <ul class="menu1">
+          <li><a  class="nearbystore" href="nearbystore.html">
+              <img class="nearbystore" src="project images/nearbuystore.svg">
+              NEARBY STORES
+          </a>
+          </li>
+          
+          <li><a>
+              <img class="DEALS" src="project images/PERCENTAGELOGO.svg">
+              KING DEALS
+          </a>
+          </li>
+          <li><a type="button" class="login" data-toggle="modal" data-target="#exampleModalLong"></button>
+              <img class="LOGIN" src="project images/USER.svg">
+              LOGIN
+          </a>
+          </li>
+
+          <!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <ul class="modalhead">
+              <img class="logo" src="project images/burgerlogoi.png" alt="burger image"   width="100" height="100">
+              <br>
+            <h3 class="modal-title" id="exampleModalLongTitle"><b>LOGIN</b></h3>
+  
+            <h4><b>enter your phone number to proceed</b></h4>
+              </ul>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="mobileno">
+              <div class="logincode">+91</div>
+              <div class="mobileinput"><input type="text" class="input login-number__input takeaway" placeholder="Enter 10 digit mobile number" id="mobileNumber" value=""></div>
+      </div>
+      <button type="button" class="btnmodal ">Get OTP</button>
+      </div>
+      <div class="modal-footer">
+          <p>
+              By continuing, you agree for our
+              <u>Terms &amp; Conditions,</u>
+              <u>Privacy Policy,</u>
+              "and"
+              <u>Content Policy</u>
+            </p>
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        -->
+      </div>
+    </div>
+  </div>
+</div>
+
+          <li><img class="CART" src="project images/CART.svg">
+              CART
+          </li>
+         </ul> 
+         </div>  
+      <div class="find">   
+          <a>
+              <img class="SEARCH" src="project images/SEARCHICON.svg">
+          </a>
+      </div>    
+      </div>
+
+
+
+    <div class="store-pg_wrapper">
+        <div class="store-locater__bar">
+            <div class="serach-autocompletenomap__content-store">
+                <div class="serach-autocompletenomap__search">
+                    <div>
+                        <div class="serach-autocompletenomap__search-left">
+                            <img src="project images/search.svg" alt="seach icon" class="search-autocompletenomap__search-img">
+                            <input type="text" placeholder="Search for your location" class="search-autocompletenomap__search-input">
+                            <div class="serach-autocompletenomap__location u_cursor_pointer" role="presentation">
+                                <img src="project images\detect-location.svg" alt="detect-location" class="search-autocompletenomap__location-img">
+                                <p class="search-autocompletenomap__location-name delivery">Detect location</p>
+                            </div>
+    
+                        </div>
+                        <div class="autocomplete-dropdown-container"></div>
+                    </div>
+                </div>
+                
+            
+            </div>
+        </div>
+        </div>
+
+        
+    <div class="store-locator__restaurant">
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">test outlet test</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -9.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Hyderabad</p>
+                            <p class="restaurant-card__closed">Currently Closed</p>
+                            <p class="restaurant-card__range">
+                                2239 km away . 4 days 20 hrs 57 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">SAKET COMMUNITY CENTRE DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (8.00 AM -11.59 PM)
+                            </p>
+                            <p class="restaurant-card__description">Burger King Anupam Complex,Saket</p>
+                            <p class="restaurant-card__closed">Currently Opened</p>
+                            <p class="restaurant-card__range">
+                                1 km away . mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" 
+                                 alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" 
+                                  role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">HAUZ KHAS METRO SATION,DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Food counter 1, hauz khas DMRC metro staion Magenta line metro ,delhi 110016</p>
+                            <p class="restaurant-card__closed">Currently Closed</p>
+                            <p class="restaurant-card__range">
+                                3 km away . 8 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">NEHRU PLACE - DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Nehru Place, Unit No OA-1, Epicura Court, Nehru Place Metro Station</p>
+                            <p class="restaurant-card__closed">Currently Closed</p>
+                            <p class="restaurant-card__range">
+                                4 km away . 13 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">AMBIENCE MALL - VASANT KUNJ DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Ambience Mall, 3rd floor court, vasant Kunj</p>
+                            <p class="restaurant-card__closed">Currently Closed</p>
+                            <p class="restaurant-card__range">
+                                7 km away . 20mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">DHAULA KAUN ,DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Food Court, Ground Floor, Unit No.1, Dhaula kaun MRTS Station</p>
+                            <p class="restaurant-card__closed">Currently Opened</p>
+                            <p class="restaurant-card__range">
+                                10 km away . 29 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">CROWN INTERIORZ - FARIDAAD</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Shop No SF-07, Second Floor, Crown Interior Mall,Faridabad</p>
+                            <p class="restaurant-card__closed">Currently Closed</p>
+                            <p class="restaurant-card__range">
+                                10 km away . 31 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">CONNAUGHT PLACE DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">E-8, Inner Circle, Connaught Place</p>
+                            <p class="restaurant-card__closed">Currently Opened</p>
+                            <p class="restaurant-card__range">
+                                12 km away . 36 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">RAJIV CHOWK, DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (8.00 AM -9.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Shop No RCK 01,0,Rajiv Chowk Metro Station,0,New Delhi,110001</p>
+                            <p class="restaurant-card__closed">Currently Opened</p>
+                            <p class="restaurant-card__range">
+                               12 km away . 36 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">LAXMI NAGAR DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">F-15,Vijay Block,Laxmi Nagar,Delhi,110092</p>
+                            <p class="restaurant-card__closed">Currently Opened</p>
+                            <p class="restaurant-card__range">
+                                14 km away . 41 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">DLF CITY CENTER GURGAON</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">City Center Mall,Sector 28,MG Road,DLF City</p>
+                            <p class="restaurant-card__closed">Currently Opened</p>
+                            <p class="restaurant-card__range">
+                                15 km away . 44 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">KASHMIRI GATE,DELHI</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (8.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Shop No. KGR 01,DMRC Metro Station,Kashmiri Gate</p>
+                            <p class="restaurant-card__closed">Currently Opened</p>
+                            <p class="restaurant-card__range">
+                                16 km away . 48 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card u_cursor_pointer" role="presentation">
+            <div class="restaurant-card__content">
+                <div class="restaurant-card__details_wrapper">
+                    <div class="restaurant-card__details">
+                        <div>
+                            <p class="restaurant-card__name">HUDA CITY CENTER,GURGOAN</p>
+                            <p class="restaurant-card__timings">
+                                Store Timing (11.00 AM -11.00 PM)
+                            </p>
+                            <p class="restaurant-card__description">Shop No-2,HUDA CITY CENTER METRO FOOD COURT</p>
+                            <p class="restaurant-card__closed">Currently Closed</p>
+                            <p class="restaurant-card__range">
+                                16 km away . 49 mins
+                            </p>
+                        </div>
+                        <div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\contact-img.svg" class="restaurant-card__contact-img" role="presentation" alt="direction">
+                            </div>
+                            <div class="restaurant-card__contact">
+                                <img src="project images\location-img.svg" alt="direction" class="restaurant-card__contact-img" role="presentation">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="restaurant-card__options border">
+                        <div class="restaurant-card__list">
+                            <img src="project images\parking-img.svg" alt="take away" class="restaurant-card__img">
+                            <span class="restaurant-card__list name disabled">Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+</body>
+</html>

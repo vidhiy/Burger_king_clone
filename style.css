@@ -1,0 +1,510 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#6f3c2f;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 5px;
+    
+    bottom: 4px;
+    background-color:rgb(255, 254, 254);;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #e70;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px#e70;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+  }
+  
+  /* Rounded sliders */
+  .slider{
+    border-radius: 34px;
+  }
+  
+  .slider::before {
+    border-radius: 50%;
+  }
+li{
+    list-style-type: none;
+}
+/* header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    height: 75px;
+    font-family: "Flame-Regular";
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .3px;
+}
+.menu1{
+        display: flex;
+        justify-content: space-between;
+        /* margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px; */
+}
+.menu1 li{
+    margin: 7px;
+    font-size: 1rem;
+    font-weight: 800;
+    font-style:bold;
+    color: #000;
+    opacity: .6;
+    padding: 0 0 0 0.5rem;
+
+}
+.menu1 li img{
+  height: 1rem;
+  width: 1rem;
+}
+.order{  
+    font-family: "Flame-Regular";
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: bold;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .3px;
+    color: #000;
+    text-transform: uppercase;
+}
+.nearbystore{
+  color: #000;
+    
+}
+.nearbystore:hover{
+    text-decoration: none;
+    color: #000;
+
+}
+.nearbystore:visited{
+  color: #000;
+}
+.searchtag{
+  text-decoration: none;
+  color: transparent;
+}
+
+/* modal  */
+
+.modal-content{
+  background-color: #6f3c2f;
+}
+.modal-header{
+  background-color:  #f5ebdc;;
+}
+.modalhead{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 10%;
+  background-color:  #f5ebdc;;
+}
+.modelhead h3{
+  color: #6f3c2f;
+    font-weight: 1000;
+    font-style: normal;
+    font-stretch: normal;
+    padding-top: 1rem;
+}
+.modelhead h4{
+  color: #6f3c2f;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  padding-top: 1rem;
+}
+.modal-body{
+  background-color: #f5ebdc;
+  border-bottom: 5px solid #e70;;
+}
+.mobileno{
+  display: flex;
+    padding: 3rem 0 0.8rem;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.logincode{
+  padding-right: 0.8rem;
+    border-right: 1px solid rgba(0,0,0,.15);
+    font-family: "FlameSans-Regular";
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.mobileinput{
+  padding-left: 0.5rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+.btnmodal{
+  background-color: #6f3c2f;
+  width: 100%;
+  padding: 7% ,9%;
+  border-radius: 10px;
+margin-top: 40px;
+color: #f8f6f3;}
+.input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+.modal-footer{
+  position: relative;
+  width: 100%;
+  background-color: #6f3c2f;
+  border-top: 30px solid #e70;
+  height: 70px;
+}
+.modal-footer p{
+  color: #fff;
+    font-size: 1rem;
+    font-family: "FlameSans-Regular";
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* banner */
+
+
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.home{
+  background-color:#f8f6f3;
+}
+
+/* menu */
+.ourmenu{
+  background-color: #f8f6f3;
+  padding-left:7%;
+  padding-right:7%;
+}
+.menu-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0 2.4rem;
+  font-size: 1.2rem;
+}
+.title-title{
+  font-family: "Flame-Regular";
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: .5px;
+    color: #000;
+    text-transform: uppercase;
+}
+.menucard{
+    margin-right: 2.9rem;
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+}
+.menu-image img{
+  max-width: 100%;
+}
+.menu-image{
+    background-color: #fff;
+    border-radius: 6px;
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-description{
+    font-family: "Flame-Regular";
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #000;
+    text-align: center;
+    padding: 1.6rem 0 2.9rem;
+    white-space: normal;
+}
+.menu-container{
+  overflow: hidden;
+  display: flex;
+}
+
+.see-all{
+  font-family: "FlameSans-Regular";
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #e70;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+.see-all a{
+  color: #e70;
+}
+.see-all a:hover{
+  text-decoration: none;
+  color: #e70;
+}
+
+/* deals */
+
+.deal-description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0 2.4rem;
+}
+.kingdeals{
+  width: 100%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  background-color: #fff;
+}
+.deal-title{
+  font-family: "Flame-Regular";
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: .5px;
+    color: #000;
+    text-transform: uppercase;
+}
+.deals img{
+  width: 370px;
+  height: 180px;
+}
+.deals{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+/* .dealbar{
+  width: 300px;
+  box-shadow: 2px 2px 30px rgb(0,0,0,0.2);
+  position: absolute;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+
+}
+.deal-img{
+  height: 250px;
+}
+.deal-img img{
+  width: 100%;
+  height: 100;
+  object-fit: cover;
+  box-sizing: border-box; */
+/* } */
+
+/* menu button */
+
+.explore-full-menu{
+  width: 100%;
+  padding: 4rem auto 2.4rem;
+  padding-top: 22px;
+  font-size: 2rem;
+  background-color: #f8f6f3;
+
+}
+.fullmenubtn{
+    position: relative;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: #e70;
+    color: #fff;
+    border: 0;
+    border-radius: 25px;
+    width: 300px;
+    cursor: pointer;
+    font-family: "Flame-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .25px;
+}
+.fullmenubtn a{
+  text-decoration:none ;
+  padding: 8px 0px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #f2f2f0;
+}
+.fullmenubtn a:hover {
+  color:#f2f2f0;
+  text-decoration: none;
+}
+.button__content{
+  padding: 8px 0px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+/* wall banner */
+.wall-Banner{
+  padding: 3rem 7.5%;
+  background-color: #fff;
+
+}
+.banner-img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* .banner{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+} */
+
+/* footer */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 3rem;}
+.footer-title {
+    font-family: "Flame-Regular";
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    padding: 0 0 2rem;
+    font-style: bold;
+
+}
+.footer__item{
+    opacity: .7;
+    font-family: "FlameSans-Regular";
+    font-size: .8rem;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: normal;
+    color: #fff;
+}
+.footerwrap {
+    padding: 5rem 0 2rem;
+    background: #323231;
+}
+
+.footer {
+    color: #fff;
+    width: 85%;
+    margin: auto;
+}
+.footer-divider{
+    opacity: 1;
+    border-bottom: 1px solid #f2f2f0;
+}
+.footer-social{
+    list-style: none;
+    display: flex;
+
+}
+.footer-social li{
+    margin-left: 2rem;
+}
+.footer-bottom{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-copyright{
+    /* font-family: "Flame-Regular"; */
+    font-size: .8rem;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+}
+.footer-stores{
+  display: flex;
+  justify-content: space-between;
+}
